@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oreakt</title>
+
+  <meta name="description" content="Oreakt is an AI research company building Reponder and Meteoryte." />
+  <meta name="theme-color" content="#000000" />
+
+  <style>
+    :root {
+      --bg: #000000;
+      --fg: #ffffff;
+      --muted: #b3b3b3;
+      --accent: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 96px;
+    }
+
+    header img.icon {
+      width: 48px;
+      height: 48px;
+    }
+
+    header img.logo {
+      height: 32px;
+    }
+
+    main {
+      max-width: 720px;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
+
+    .product {
+      border: 1px solid #1f1f1f;
+      border-radius: 12px;
+      padding: 24px;
+      transition: border-color 0.2s ease;
+    }
+
+    .product:hover {
+      border-color: #444;
+    }
+
+    .product h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: var(--fg);
+    }
+
+    .product p {
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .product a {
+      text-decoration: none;
+      color: var(--fg);
+      font-weight: 500;
+    }
+
+    footer {
+      margin-top: 120px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer span {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Icon -->
+      <img src="oreakt-icon.png" alt="Oreakt Icon" class="icon" />
+
+      <!-- Wordmark -->
+      <img src="oreakt-logo.png" alt="Oreakt" class="logo" />
+    </header>
+
+    <main>
+      <h1>Artificial intelligence, built with intent.</h1>
+
+      <p>
+        Oreakt is an AI research company focused on building systems that
+        understand, respond, and explore information with clarity and restraint.
+      </p>
+
+      <section class="products">
+        <div class="product">
+          <h2>Reponder</h2>
+          <p>
+            A conversational AI designed for thoughtful, reliable interaction.
+          </p>
+          <a href="https://reponder.oreakt.com">reponder.oreakt.com →</a>
+        </div>
+
+        <div class="product">
+          <h2>Meteoryte</h2>
+          <p>
+            An AI-powered browser that understands the web as you explore it.
+          </p>
+          <a href="https://meteoryte.oreakt.com">meteoryte.oreakt.com →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Oreakt</span>
+    </footer>
+  </div>
+</body>
+</html>
